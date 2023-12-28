@@ -34,14 +34,10 @@ public class Module_01 {
     }
 
     public static void timSoNguyenTo(Integer so) {
-        for (int i = 1; i <= so; i++) {
+        for (int i = 2; i <= so; i++) {
             boolean flag = true;
 
-            if (i == 1 || i == 4) {
-                flag = false;
-            }
-
-            for (int j = 2; j < i / 2; j++) {
+            for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
                     flag = false;
                     break;
@@ -85,22 +81,18 @@ public class Module_01 {
         //Bài 1: Hello world
         System.out.println("Hello world");
 
-        
         //Bài 2: in biến mang giá trị HW
         String helloWorld = "Hello world";
         System.out.println(helloWorld);
 
-        
         //Bài 3: concatenate 2 biến
         String hello = "Hello", world = "world";
         String hello_world = hello + " " + world;
         System.out.println(hello_world);
 
-        
         //Bài 4: hàm số
         Module_01.helloWorld(hello_world);
 
-        
         //Bài 5: in bảng cửu chương
         Module_01.inBangCuuChuong(1);
         Module_01.inBangCuuChuong(2);
@@ -112,15 +104,12 @@ public class Module_01 {
         Module_01.inBangCuuChuong(8);
         Module_01.inBangCuuChuong(9);
         Module_01.inBangCuuChuong(10);
-        
 
         //Bài 6: tính giai thừa
         Module_01.tinhGiaiThua(5);
 
-        
         //Bài 7: tìm số nguyên tố
         Module_01.timSoNguyenTo(100);
-        
 
         //Bài 8: tính tổng các số chẵn
         Scanner sc = new Scanner(System.in);
@@ -131,7 +120,6 @@ public class Module_01 {
 
         System.out.println("Tổng các số từ chẵn từ 1 đến " + n + " là: " + Module_01.tinhTongCacSoChan(n));
 
-        
         //Bài 9: vẽ tam giác
         sc = new Scanner(System.in);
 
